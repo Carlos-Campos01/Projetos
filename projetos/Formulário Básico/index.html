@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+
+	<head>
+		<title>Help Tec Formulário</title>
+		<meta charset="utf-8" />
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div> 
+			<img src="imagens/logo.png">
+			<h2>Help Tecnologia</h2>
+		</div>
+
+		<form>
+			<fieldset>
+				<legend>Formulário para Solicitação de Serviço</legend>
+				<div><input type="text" name="nome" placeholder="Digite o seu Nome" /></div>
+				<div><input type="text" name="email" placeholder="Digite o seu E-mail" /></div>
+				<div>
+					<select name="lista">
+						<option disabled selected>Deseja contrato de suporte tecnico?</option>
+						<option value="sim">Sim</option>
+						<option value="Não">Não</option>
+						<option value="agendar">Quero agendar uma reunião para avaliar</option>
+					</select>
+				</div>
+
+				<h2>Qual sua cidade?</h2>
+				<div class="input">
+				<div>
+					<input type="radio" name="cidade" value="Belo Horizonte" /><span>Belo Horizonte</span>
+				</div>
+				<div>
+					<input type="radio" name="cidade" value="São Paulo" /><span>São Paulo</span>
+				</div>
+
+				<div>
+					<input type="radio" name="cidade" value="Rio de Janeiro" /><span>Rio de Janeiro</span>
+				</div>
+
+				</div>
+
+				<h2>Qual serviço você deseja fazer orçamento?</h2>
+				<div class="input">
+				<div>
+					<input type="checkbox" name="cidade[]" value="infra" /><span>Instalação de Infraestrurtura de TI</span>
+				</div>
+				<div>
+					<input type="checkbox" name="cidade[]" value="srv" /><span>Aquisição de Servidor</span>
+				</div>
+
+				<div>
+					<input type="checkbox" name="cidade[]" value="sistema" /><span>Locação de Sistema</span>
+				</div>
+
+				</div>
+
+					<div>
+						<textarea name="detalhes" placeholder="Nos informe mais detalhes referente a sua solicitação de orçamento"></textarea>
+					</div>
+
+					<div>
+						<input type="submit" name="acao" value="Enviar!">
+					</div>
+			</fieldset>
+		</form>
+		
+	</body>
+
+
+
+
+</html>
